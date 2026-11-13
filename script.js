@@ -1,18 +1,24 @@
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Mobile menu toggle
+// Side navigation drawer toggle
 const toggle = document.querySelector(".menu-toggle");
 const nav = document.getElementById("nav");
-toggle.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
+const backdrop = document.getElementById("navBackdrop");
+const closeBtn = document.querySelector(".nav-close");
+
+function setNav(open) {
+  nav.classList.toggle("open", open);
+  backdrop.classList.toggle("open", open);
   toggle.setAttribute("aria-expanded", open);
-});
+}
+
+toggle.addEventListener("click", () => setNav(!nav.classList.contains("open")));
+closeBtn.addEventListener("click", () => setNav(false));
+backdrop.addEventListener("click", () => setNav(false));
+document.addEventListener("keydown", (e) => e.key === "Escape" && setNav(false));
 nav.querySelectorAll("a").forEach((link) =>
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    toggle.setAttribute("aria-expanded", false);
-  })
+  link.addEventListener("click", () => setNav(false))
 );
 
 // Fade-in sections on scroll
@@ -39,3 +45,13 @@ const sectionObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
 sections.forEach((s) => s && sectionObserver.observe(s));
+
+
+
+// Welcome loading screen
+const preloader = document.getElementById("preloader");
+if (preloader) {
+  window.addEventListener("load", () => {
+    setTimeout(() => preloader.classList.add("done"), 1300);
+  });
+}

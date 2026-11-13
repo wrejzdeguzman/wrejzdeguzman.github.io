@@ -11,19 +11,59 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
+  <!-- ===== WELCOME LOADING SCREEN ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <p class="preloader-brand">&lt;WD<span>/</span>&gt;</p>
+      <p class="preloader-title">Welcome to my <span>portfolio.</span></p>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== HEADER (BRAND + SCROLLING TOOLS + SIDE MENU BUTTON) ===== -->
   <header class="header">
     <a class="brand" href="#home">&lt;WD<span>/</span>&gt;</a>
+    <div class="marquee" aria-label="Tools and software">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>FIGMA</span><i>✦</i>
+          <span>CANVA</span><i>✦</i>
+          <span>BLENDER</span><i>✦</i>
+          <span>HTML</span><i>✦</i>
+          <span>CSS</span><i>✦</i>
+          <span>MICROSOFT WORD</span><i>✦</i>
+          <span>SQL</span><i>✦</i>
+          <span>VISUAL STUDIO CODE</span><i>✦</i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>FIGMA</span><i>✦</i>
+          <span>CANVA</span><i>✦</i>
+          <span>BLENDER</span><i>✦</i>
+          <span>HTML</span><i>✦</i>
+          <span>CSS</span><i>✦</i>
+          <span>MICROSOFT WORD</span><i>✦</i>
+          <span>SQL</span><i>✦</i>
+          <span>VISUAL STUDIO CODE</span><i>✦</i>
+        </div>
+      </div>
+    </div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
+
+  <!-- ===== SIDE NAVIGATION DRAWER ===== -->
+  <div class="nav-backdrop" id="navBackdrop"></div>
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav-top">
+      <span>Navigation</span>
+      <button class="nav-close" type="button" aria-label="Close navigation">✕</button>
+    </div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <main>
     <!-- ===== HOMEPAGE ===== -->
@@ -43,8 +83,9 @@
           <span class="initials">WD</span>
           <img src="profile.jpg" alt="Portrait of Wrejz Yahsir A. De Guzman" onerror="this.remove()">
         </div>
-        <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+        <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
         <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        <span class="sparkle sparkle-three" aria-hidden="true">✦</span>
         <div class="code-badge"><span class="k">const</span> student = <span class="s">"BSIT"</span>;</div>
       </div>
     </section>
@@ -85,6 +126,9 @@
         <div class="skill-card"><img class="logo" src="sql.svg" alt="SQL database logo"><h3>SQL</h3><p>Writing queries and managing data in relational databases.</p></div>
         <div class="skill-card"><img class="logo" src="figma.svg" alt="Figma logo"><h3>Figma</h3><p>Planning user interfaces with wireframes and prototypes.</p></div>
         <div class="skill-card"><img class="logo" src="vscode.svg" alt="Visual Studio Code logo"><h3>Visual Studio Code</h3><p>Writing and editing code for web-based projects.</p></div>
+        <div class="skill-card"><img class="logo" src="blender.svg" alt="Blender logo"><h3>Blender</h3><p>Creating 3D models, animations, and visual renders.</p></div>
+        <div class="skill-card"><img class="logo" src="html5.svg" alt="HTML5 logo"><h3>HTML</h3><p>Structuring clean, accessible, and responsive web pages.</p></div>
+        <div class="skill-card"><img class="logo" src="css3.svg" alt="CSS3 logo"><h3>CSS</h3><p>Styling layouts, animations, and responsive designs.</p></div>
       </div>
     </section>
 
@@ -148,7 +192,7 @@
     <section class="contact" id="contact">
       <div class="wrap contact-inner">
         <p class="eyebrow">// Let's Connect</p>
-        <h2>Have a question or an opportunity?<br><span class="accent">Let’s talk.</span></h2>
+        <h2>Open to new opportunities &amp; collaborations.<br><span class="accent">Get in touch.</span></h2>
         <p>Feel free to reach out through email or connect with me on Facebook.</p>
         <div class="buttons center">
           <a class="btn btn-light" href="mailto:wrejzdeguzmanqt@gmail.com">✉ Email Me</a>
