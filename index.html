@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The digital portfolio of Wrejz Yahsir A. De Guzman, an Information Technology student at STI College Batangas.">
+  <title>Wrejz Yahsir A. De Guzman | Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <a class="brand" href="#home">&lt;WD<span>/</span>&gt;</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOMEPAGE ===== -->
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">// Hello, I'm Wrejz</p>
+        <h1>Exploring possibilities, <span class="accent">one line of code</span> at a time.<span class="cursor">_</span></h1>
+        <p class="intro">I’m Wrejz Yahsir A. De Guzman, an Information Technology student at STI College Batangas. I’m passionate about technology, web development, and exploring new ways to improve my skills. Welcome to my digital portfolio, where I showcase my background, technical skills, achievements, and projects throughout my journey as an IT student.</p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#projects">View My Projects ↗</a>
+          <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener">📄 Resume</a>
+          <a class="btn btn-outline" href="assets/cover-letter.jpg" target="_blank" rel="noopener">✉ Cover Letter</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <span class="initials">WD</span>
+          <img src="assets/profile.jpg" alt="Portrait of Wrejz Yahsir A. De Guzman" onerror="this.remove()">
+        </div>
+        <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+        <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        <div class="code-badge"><span class="k">const</span> student = <span class="s">"BSIT"</span>;</div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section class="section tint" id="about">
+      <div class="wrap">
+        <div class="heading">
+          <p class="eyebrow">// About Me</p>
+          <h2>A curious mind with a <span class="accent">passion for technology.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="lead">I’m Wrejz Yahsir A. De Guzman, an IT student who enjoys exploring technology and discovering new things. I like working with computers, exploring digital tools, and finding creative ways to turn ideas into something useful.</p>
+            <p>As I continue my journey in Information Technology, I see every project and challenge as a chance to improve. I may still have a lot to learn, but I’m always willing to explore, experiment, and push myself beyond what I already know.</p>
+            <p>Outside the classroom, I value personal growth, creativity, and gaining experiences that can help shape my future career.</p>
+          </div>
+          <aside class="facts">
+            <div><span>Full name</span><strong>Wrejz Yahsir A. De Guzman</strong></div>
+            <div><span>Born</span><strong>November 20, 2004</strong></div>
+            <div><span>Program</span><strong>Bachelor of Science in Information Technology</strong></div>
+            <div><span>School</span><strong>STI College Batangas</strong></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KEY SKILLS ===== -->
+    <section class="section wrap" id="skills">
+      <div class="heading">
+        <p class="eyebrow">// Key Skills</p>
+        <h2>Tools I <span class="accent">work with.</span></h2>
+        <p class="subtitle">These are the tools and technologies I use to create documents, design visuals, manage data, and build web-based projects.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card"><img class="logo" src="assets/logos/word.svg" alt="Microsoft Word logo"><h3>Microsoft Word</h3><p>Creating well-formatted documents, reports, and technical documentation.</p></div>
+        <div class="skill-card"><img class="logo" src="assets/logos/canva.svg" alt="Canva logo"><h3>Canva</h3><p>Designing posters, presentations, and visual content.</p></div>
+        <div class="skill-card"><img class="logo" src="assets/logos/sql.svg" alt="SQL database logo"><h3>SQL</h3><p>Writing queries and managing data in relational databases.</p></div>
+        <div class="skill-card"><img class="logo" src="assets/logos/figma.svg" alt="Figma logo"><h3>Figma</h3><p>Planning user interfaces with wireframes and prototypes.</p></div>
+        <div class="skill-card"><img class="logo" src="assets/logos/vscode.svg" alt="Visual Studio Code logo"><h3>Visual Studio Code</h3><p>Writing and editing code for web-based projects.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section tint" id="projects">
+      <div class="wrap">
+        <div class="heading">
+          <p class="eyebrow">// Projects</p>
+          <h2>Featured <span class="accent">work.</span></h2>
+        </div>
+        <article class="project">
+          <a class="project-visual" href="assets/project.jpg" target="_blank" rel="noopener" aria-label="Open the project screenshot in a new tab">
+            <img src="assets/project.jpg" alt="Homepage of the Berberabe Pastor Dental Clinic web system">
+          </a>
+          <div class="project-content">
+            <span class="tag">Capstone Project</span>
+            <h3>A Web-Based Appointment and Inventory System for Berberabe Pastor Dental Clinic</h3>
+            <p class="summary">A web-based system built to help Berberabe Pastor Dental Clinic move away from manual, paper-based processes. It lets patients book appointments online and helps clinic staff manage schedules, patient records, and dental supplies in one place, making daily operations faster, more organized, and more convenient for both the clinic and its patients.</p>
+            <h4>Project highlights</h4>
+            <ul>
+              <li>To develop an online appointment scheduling module that enhances the organization and handling of patient appointments.</li>
+              <li>To digitalize patient records and ensure quick, accurate, and organized retrieval of patient information.</li>
+              <li>To develop a dental supply inventory system that integrates image processing for the automatic recognition (<strong>AI Scanner</strong>) and stock monitoring of dental tools, equipment, and consumable items.</li>
+            </ul>
+            <div class="buttons">
+              <a class="btn btn-primary" href="https://www.berberapastordental.com/" target="_blank" rel="noopener">Visit Website ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section class="section wrap" id="certificates">
+      <div class="heading">
+        <p class="eyebrow">// Certificates</p>
+        <h2>Courses &amp; <span class="accent">achievements.</span></h2>
+        <p class="subtitle">Click a certificate to view the full image.</p>
+      </div>
+      <div class="cert-grid">
+        <a class="cert" href="assets/certificate-java.jpg" target="_blank" rel="noopener">
+          <div class="cert-img"><img src="assets/certificate-java.jpg" alt="Oracle Academy Award of Course Completion in Java Fundamentals"></div>
+          <div class="cert-info">
+            <small>ORACLE ACADEMY · JUNE 19, 2024</small>
+            <strong>Java Fundamentals</strong>
+            <span>Award of Course Completion ↗</span>
+          </div>
+        </a>
+        <a class="cert" href="assets/certificate-sap.jpg" target="_blank" rel="noopener">
+          <div class="cert-img"><img src="assets/certificate-sap.jpg" alt="Certificate of Participation in SD, MM, PP, FI, CO modules of S/4HANA using Global Bike"></div>
+          <div class="cert-info">
+            <small>JANUARY 20 – JUNE 7, 2025</small>
+            <strong>SAP S/4HANA Using Global Bike</strong>
+            <span>Certificate of Participation (SD, MM, PP, FI, CO modules) ↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner">
+        <p class="eyebrow">// Let's Connect</p>
+        <h2>Have a question or an opportunity?<br><span class="accent">Let’s talk.</span></h2>
+        <p>Feel free to reach out through email or connect with me on Facebook.</p>
+        <div class="buttons center">
+          <a class="btn btn-light" href="mailto:wrejzdeguzmanqt@gmail.com">✉ Email Me</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/wrejzdeguzman" target="_blank" rel="noopener">Facebook ↗</a>
+        </div>
+        <p class="contact-email">wrejzdeguzmanqt@gmail.com</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>© <span id="year"></span> Wrejz Yahsir A. De Guzman</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
